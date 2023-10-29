@@ -1,3 +1,4 @@
 Utilizando charlieplexing para ahorrar pines en el control de leds
 
-![guia avl](https://github.com/ericksm248/Curso_STM32_proyectos/assets/147954327/c07585bb-0771-4aa8-bc2d-b10f1b052e5f)
+![charlieplexing](https://github.com/ericksm248/Curso_STM32_proyectos/assets/147954327/38dc1d2b-b08f-4e1b-b4fc-6de974bf666f)
+
