@@ -43,13 +43,13 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+extern uint8_t contador;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern uint8_t contador;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
