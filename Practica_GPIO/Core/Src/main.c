@@ -39,6 +39,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define salida1(estado)  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, estado);
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -55,9 +56,8 @@ extern uint8_t contador;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void PIN_MODE(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin,uint8_t mode);
 /* USER CODE BEGIN PFP */
-
+static void PIN_MODE(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin,uint8_t mode);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/

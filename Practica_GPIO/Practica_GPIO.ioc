@@ -85,6 +85,7 @@ PB13.Locked=true
 PH0-OSC_IN.GPIO_Label=PH0-OSC_IN
 Mcu.Pin0=PE3
 Mcu.Pin1=PC14-OSC32_IN
+GPIO.groupedBy=Group By Peripherals
 Mcu.Pin2=PC15-OSC32_OUT
 PA9.GPIO_Mode=GPIO_MODE_INPUT
 Mcu.Pin3=PH0-OSC_IN

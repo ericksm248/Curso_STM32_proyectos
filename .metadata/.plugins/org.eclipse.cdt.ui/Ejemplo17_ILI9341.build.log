@@ -1,0 +1,29 @@
+16:52:08 **** Incremental Build of configuration Debug for project Ejemplo17_ILI9341 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:141:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  141 |  sprintf(Buffer,"Contador en %d",var);
+      |  ^~~~~~~
+../Core/Src/main.c:141:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include "ILI9341_GFX.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "Ejemplo17_ILI9341.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Proyectos Github curso\Curso_STM32_proyectos\Ejemplo17_ILI9341\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejemplo17_ILI9341.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejemplo17_ILI9341.elf
+ 
+arm-none-eabi-objdump -h -S  Ejemplo17_ILI9341.elf  > "Ejemplo17_ILI9341.list"
+arm-none-eabi-objcopy  -O binary  Ejemplo17_ILI9341.elf  "Ejemplo17_ILI9341.bin"
+arm-none-eabi-size   Ejemplo17_ILI9341.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23548	    124	   1780	  25452	   636c	Ejemplo17_ILI9341.elf
+Finished building: default.size.stdout
+Finished building: Ejemplo17_ILI9341.bin
+ 
+ 
+Finished building: Ejemplo17_ILI9341.list
+ 
+
+16:52:09 Build Finished. 0 errors, 2 warnings. (took 1s.544ms)
+
