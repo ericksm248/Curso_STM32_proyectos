@@ -1243,7 +1243,7 @@ void EXTI0_IRQHandler(void)
  8000964:	b580      	push	{r7, lr}
  8000966:	af00      	add	r7, sp, #0
   /* USER CODE BEGIN EXTI0_IRQn 0 */
-	boton1.retardo =0;
+	boton1.retardo = 0;
  8000968:	4b05      	ldr	r3, [pc, #20]	; (8000980 <EXTI0_IRQHandler+0x1c>)
  800096a:	2200      	movs	r2, #0
  800096c:	705a      	strb	r2, [r3, #1]

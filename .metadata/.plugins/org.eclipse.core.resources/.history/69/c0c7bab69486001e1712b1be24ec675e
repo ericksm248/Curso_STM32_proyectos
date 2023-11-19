@@ -109,6 +109,7 @@ int main(void)
 			  boton1.pulsado=0;
 			  HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin);
 		  }
+
 	  }
     /* USER CODE END WHILE */
 
